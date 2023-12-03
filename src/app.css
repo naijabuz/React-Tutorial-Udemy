@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --BG-Primary: #202020;
+  --Font-Primary-1: #f5f5f5;
+}
+
+body {
+  background: var(--Font-Primary-1);
+  color: var(--BG-Primary);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1.15px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  padding: 20px;
+}
+
+/* Booklist */
+
+.booklist {
+  width: 90vw;
+  max-width: 1150px;
+  margin: 20px auto;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .booklist {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Book */
+
+.book img {
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.book h2 {
+  font-size: 1.9rem;
+}
+
+.book {
+  background-color: #20202070;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
